@@ -170,10 +170,10 @@ public class APCluster {
 
     protected int[] clusterIter(int iterNum) {
         Smatrix = getSimilarMatrix(oriDatas);
-        int diffNum = 0;
-        int diffCount = 0;
+        int diffCount = 0;//中心点不变化的次数
         for (int i = 0; i < iterNum; i++) {
-            System.out.println("正在进行第" + i + "次迭代");
+            int diffNum = 0;//在一次迭代中中心点变化的个数
+//            System.out.println("正在进行第" + i + "次迭代");
             //注意，先更新R再更新A
             //TODO 更新时是否需要使用最新的数据，待斟酌
             double[][] rmatrix = calResponsibility(Smatrix, Amatrix);
