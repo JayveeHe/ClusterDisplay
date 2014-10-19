@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ClusterDisplay:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ClusterDisplay_jar</output-path>
+    <root id="archive" name="ClusterDisplay.jar">
+      <element id="module-output" name="ClusterDisplay" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/forms_rt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/org.json.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
